@@ -50,6 +50,7 @@ VALUES (:image_name, :image_type, :image_content, :image_size, now())';
   </head>
 
   <body>
+      <a href="logout.php">logout</a>
       <div class="container mt-5">
           <div class="row">
               <h1>購入item</h1>
@@ -76,6 +77,11 @@ VALUES (:image_name, :image_type, :image_content, :image_size, now())';
                           <label>画像を選択</label>
                           <input type="file" name="image">
                       </div>
+                      <tr>
+                          <div>
+                              <textarea name="caption" placeholder="キャプション（140文字以下）" id="caption"></textarea>
+                          </div>
+                      </tr>
                       <button type="submit" class="btn btn-primary">保存</button>
                   </form>
                   <style>
